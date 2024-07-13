@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body className={cn('antialiased', inter.className)}>{children}</body>
     </html>
   )
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
     default: sharedTitle,
   },
   description: sharedDescription,
-  openGraph: {
-    title: {
-      template: `%s — ${sharedTitle}`,
-      default: sharedTitle,
-    },
-    description: sharedDescription,
-    images: [
-      {
-        url: 'image-url',
-        width: 1200,
-        height: 630,
-        alt: 'Description of the image',
-      },
-    ],
-    type: 'website',
-    url: '/',
-    siteName: sharedTitle,
-    locale: 'en_US',
-  },
+  // openGraph: {
+  //   title: {
+  //     template: `%s — ${sharedTitle}`,
+  //     default: sharedTitle,
+  //   },
+  //   description: sharedDescription,
+  //   images: [
+  //     {
+  //       url: 'image-url',
+  //       width: 1200,
+  //       height: 630,
+  //       alt: 'Description of the image',
+  //     },
+  //   ],
+  //   type: 'website',
+  //   url: '/',
+  //   siteName: sharedTitle,
+  //   locale: 'tr_TR',
+  // },
 }
 
 export const viewport = {
